@@ -12,7 +12,7 @@ const app = express();
 require('./config/passport')(passport)
 
 // connect to mongo 
-require('dotenv/config')
+require('dotenv').config()
 mongoose.connect(process.env.DB_CONNECTION,
     {
         useNewUrlParser: true,
