@@ -4,7 +4,7 @@ const mongoose = require('mongoose')
 const flash = require('connect-flash')
 const session = require('express-session')
 const passport = require('passport')
-require('dotenv/config')
+
 
 const app = express();
 
@@ -12,6 +12,7 @@ const app = express();
 require('./config/passport')(passport)
 
 // connect to mongo 
+require('dotenv/config')
 mongoose.connect(process.env.DB_CONNECTION,
     {
         useNewUrlParser: true,
