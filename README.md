@@ -1,4 +1,4 @@
 # passport-authentication
 
 
-# complete authentication app with login, register and access control using Node.js, Express, Passport, Mongoose and more.
+## complete authentication app with login, register and access control using Node.js, Express, Passport, Mongoose and more.
