@@ -11,9 +11,13 @@ const app = express();
 //  Passport Config
 require('./config/passport')(passport)
 
+// DB Config
+const db = require('./config/key').MongoURI
+
+// process.env.DB_CONNECTION
 // connect to mongo 
-require('dotenv').config()
-mongoose.connect(process.env.DB_CONNECTION,
+// require('dotenv').config()
+mongoose.connect(db,
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
