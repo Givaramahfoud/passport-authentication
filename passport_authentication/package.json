@@ -1,4 +1,4 @@
-{
+{ "homepage": "https://givaramahfoud.github.io/passport-authentication/",
   "name": "passport_authentication",
   "version": "1.0.0",
   "description": "",
@@ -7,6 +7,7 @@
     "node": "14.x"
   },
   "scripts": {
+    "predeploy": "npm run build",
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
